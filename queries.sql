@@ -105,3 +105,5 @@ SELECT s.name AS suggested_specialty, COUNT(*) AS animal_count FROM animals a
 JOIN visits v ON a.id = v.animal_id JOIN vets vt ON v.vet_id = vt.id JOIN vets ms ON ms.name = 'Maisy Smith'
 JOIN specializations sp ON vt.id = sp.vet_id AND a.species_id = sp.species_id JOIN species s ON sp.species_id = s.id
 WHERE ms.id = vt.id GROUP BY s.name ORDER BY animal_count DESC LIMIT 1;
+
+EXPLAIN ANALYZE SELECT COUNT(*) FROM visits where animal_id = 4;
