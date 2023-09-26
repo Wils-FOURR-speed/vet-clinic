@@ -30,6 +30,9 @@
 
 **[vet_clinic]** is a project in database which involves the creation of tables and inserting data in those tables.
 
+![image](https://github.com/Wils-FOURR-speed/vet-clinic/assets/124159862/b0e6612d-095b-4989-b2ad-a771e27d9f0e)
+
+
 This repository includes files with plain SQL that can be used to recreate a database:
 
 - Use [schema.sql](./schema.sql) to create all tables.
